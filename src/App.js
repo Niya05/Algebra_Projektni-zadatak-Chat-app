@@ -4,9 +4,9 @@ import { Icon } from "./components/Icon";
 function App() {
   return (
     <div>
-      <Button>Join</Button>
-      <Button>
-        <Icon />
+      <Button variant="text">Join</Button>
+      <Button variant="icon">
+        <Icon type="send" />
       </Button>
     </div>
   );
