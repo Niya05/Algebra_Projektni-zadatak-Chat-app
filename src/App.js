@@ -6,7 +6,7 @@ function App() {
     <div>
       <Button variant="text">Join</Button>
       <Button variant="icon">
-        <Icon type="send" />
+        <Icon variant="send" />
       </Button>
     </div>
   );
