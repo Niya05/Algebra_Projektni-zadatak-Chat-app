@@ -1,8 +1,7 @@
-import { MessageForm } from "./components/MessageForm";
-import { JoinPage } from "./pages/JoinPage";
+import { MessageMetadata } from "./components/MessageMetadata";
 
 function App() {
-  return <MessageForm />;
+  return <MessageMetadata displayName="Niya" time="20:13" />;
 }
 
 export default App;
