@@ -1,6 +1,6 @@
 import { Button } from "./components/Button";
 import { Icon } from "./components/Icon";
-import { InputElement } from "./components/InputElement";
+import { InputFormField } from "./components/InputFormField";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Button variant="icon">
         <Icon variant="send" />
       </Button>
-      <InputElement />
+      <InputFormField />
     </div>
   );
 }
