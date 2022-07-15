@@ -1,14 +1,15 @@
-import { Avatar } from "./components/Avatar";
-import { MessageText } from "./components/MessageText";
+import { Message } from "./components/Message";
 
 function App() {
   return (
-    <div>
-      <Avatar text="AF" backgroundColor="lime" />
-      <MessageText displayName="Niya" time="20:13">
-        Ready for the trip? I'm so excited I couldn't sleep!
-      </MessageText>
-    </div>
+    <Message
+      avatarBackgroundColor="purple"
+      avatarText="AF"
+      displayName="Antonija Felja"
+      time="20:50"
+    >
+      Ready for the trip? I'm so excited I couldn't sleep!
+    </Message>
   );
 }
 
