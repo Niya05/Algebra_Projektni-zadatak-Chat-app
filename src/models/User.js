@@ -5,6 +5,8 @@ export class User {
       .split(" ")
       .map((word) => word[0])
       .join("");
-    this.avatarBackgroundColor = "red";
+    this.avatarBackgroundColor = `hsl(${Math.round(
+      Math.random() * 360
+    )}, 85%, 85%)`;
   }
 }
