@@ -1,1 +1,1 @@
-export { MessageForm } from "./MessageForm.component";
+export { MessageForm } from "./MessageForm.container";
