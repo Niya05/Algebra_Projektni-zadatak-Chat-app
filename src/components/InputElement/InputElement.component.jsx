@@ -6,6 +6,9 @@ export function InputElement(props) {
       className="input-element"
       id={props.id}
       name={props.name}
+      onChange={props.onChange}
+      value={props.value}
+      required={props.required}
     />
   );
 }

@@ -9,7 +9,13 @@ export function InputFormField(props) {
         {props.label}
       </label>
       <div className="input-form-field__element">
-        <InputElement id={props.id} name={props.name} />
+        <InputElement
+          id={props.id}
+          name={props.name}
+          onChange={props.onChange}
+          value={props.value}
+          required={props.required}
+        />
       </div>
     </div>
   );
