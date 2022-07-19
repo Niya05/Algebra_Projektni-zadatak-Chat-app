@@ -4,7 +4,8 @@ import { Message as MessageModel } from "../../models/Message";
 import { Message } from "../../components/Message";
 import { MessageForm } from "../../components/MessageForm";
 import { useUser } from "../../contexts/UserContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export function ChatPage() {
   const { user } = useUser();
@@ -23,14 +24,11 @@ export function ChatPage() {
         message: message
       });
     }
-
-    setState((state) => [ ...state, message ]);
   }
 
   useEffect(() => {
     if (drone !== null) return;
-  // eslint-disable-next-line no-undef
-  setDrone(new Scaledrone('Kg0qUSWmByhQ8fie'));
+    setDrone(new window.Scaledrone('Kg0qUSWmByhQ8fie'));
   }, [drone, setDrone]);
 
   useEffect(() => {
@@ -38,16 +36,21 @@ export function ChatPage() {
 
     const room = drone.subscribe('chat');
 
-  room.on('open', error => {
-    if (error) {
-      return console.error(error);
-    }
-    // Connected to room
-  });
+    room.on('open', error => {
+      if (error) {
+        return console.error(error);
+      }
+      console.log('Connected to room');
+    });
+  
+    room.on('message', message => {
+      console.log('Message received', message);
 
-  room.on('message', message => {
-    // Received a message sent to the room
-  });
+      setState((state) => [
+        ...state,
+        MessageModel.fromObject(message.data)
+      ]);
+    });
   }, [drone]);
 
   const messageItems = state.map((message, index) => (
