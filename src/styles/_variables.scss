@@ -1,10 +1,11 @@
-$color-primary: rgb(151, 8, 247);
-$color-text: #000;
-$color-background: linear-gradient(to bottom right, rgb(199, 132, 243), rgba(220, 188, 241, 0.993));;
-$color-theme: rgb(151, 8, 247);
-$color-theme-inverted: #000;
+$color-primary: rgb(65, 139, 107);
+$color-text: rgb(34, 31, 31);
+$color-background: linear-gradient(to bottom, rgb(166, 229, 245), rgb(93, 161, 144));;
+$color-theme: rgb(42, 139, 97);
+$color-theme-stone: rgb(109, 60, 60);
+$color-theme-inverted: rgb(34, 31, 31);
 
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Merriweather', serif;
 
 $size-wrapper-margin: 16px;
 $size-radius-small: 8px;

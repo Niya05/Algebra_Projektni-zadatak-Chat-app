@@ -1,13 +1,20 @@
+@import "../../styles/index";
+
 .message {
     display: flex;
     flex-flow: row nowrap;
     justify-content: stretch;
     align-items: flex-start;
+    padding: 5px;
+    border: 1px solid $color-theme-stone;
+    border-radius: 10px;
   
     &__avatar {
       flex: 0 0 auto;
       margin-right: 8px;
       display: inline-block;
+      border: 1px solid $color-theme-stone;
+      border-radius: 20px;
     }
   
     &__text {
