@@ -2,10 +2,18 @@ import "./Message.styles.scss";
 
 import { Avatar } from "../Avatar";
 import { MessageText } from "../MessageText";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 export function Message(props) {
+  const elementReference = useRef();
+
+  useEffect(() => {
+    elementReference.current.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
   return (
-    <div className="message">
+    <div ref={elementReference} className="message">
       <div className="message__avatar">
         <Avatar
           backgroundColor={props.avatarBackgroundColor}
