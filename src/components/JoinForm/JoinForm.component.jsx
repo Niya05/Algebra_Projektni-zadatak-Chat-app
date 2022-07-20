@@ -12,16 +12,16 @@ export function JoinForm(props) {
     >
       <div className="join-form__field">
         <InputFormField
-          label="Display name"
           name="displayName"
           id="display-name"
+          label="Name"          
           onChange={props.onChange}
           value={props.formState.displayName}
           required
         />
       </div>
       <div className="join-form__field">
-        <Button variant="text">Join</Button>
+        <Button variant="text"><span className="no-hover">Enter</span><span className="hover-text">at your own risk</span></Button>
       </div>
     </form>
   );

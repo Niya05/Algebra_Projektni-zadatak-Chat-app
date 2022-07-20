@@ -27,3 +27,15 @@
     fill: $color-theme-inverted;
   }
 }
+
+.button:hover .no-hover {
+  display: none;
+} 
+
+.button .hover-text {
+  display: none;
+}
+
+.button:hover .hover-text {
+  display: inline;
+}

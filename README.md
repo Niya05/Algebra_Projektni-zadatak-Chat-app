@@ -52,5 +52,4 @@ Build the project for production.
 ## Roadmap
 
 - [ ] "Typing..." indicator
-- [ ] Dark/ Light Theme
-- [ ] Add emojis to messages
+- [ ] Dark theme toggle
