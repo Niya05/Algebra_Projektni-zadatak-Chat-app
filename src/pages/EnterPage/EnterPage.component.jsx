@@ -3,8 +3,9 @@ import "./EnterPage.styles.scss";
 import { EnterForm } from "../../components/EnterForm";
 import { DinoNameFact } from "../../components/DinoNameFact";
 import { useUser } from "../../contexts/UserContext";
+import { Dino } from "../../components/Dino";
 
-export function EnterPage(props) {
+export function EnterPage() {
   const { setUser } = useUser();
 
   const joinDinosaurs = (formState) => {
@@ -20,6 +21,8 @@ export function EnterPage(props) {
         <EnterForm onEnter={joinDinosaurs} />
       </div>
       <DinoNameFact />
+      <Dino />
     </div>
+    
   );
 }

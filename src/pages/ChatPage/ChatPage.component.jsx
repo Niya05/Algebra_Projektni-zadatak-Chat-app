@@ -2,6 +2,7 @@ import "./ChatPage.styles.scss";
 
 import { Message } from "../../components/Message";
 import { MessageForm } from "../../components/MessageForm";
+import { Dino } from "../../components/Dino";
 
 export function ChatPage(props) {
   if (props.error !== null) {
@@ -12,7 +13,10 @@ export function ChatPage(props) {
 
   if (!props.connectedToRoom) {
     return (
-      <div className="connection-loading">Joining the pack...</div>
+      <span>
+        <div className="connection-loading">Joining the pack...</div>
+        <Dino />
+      </span>
     );
   }
 
@@ -31,11 +35,12 @@ export function ChatPage(props) {
 
   return (
     <div className="chat-page">
-      <div className="chat-page__title">Welcome</div>
+      <div className="chat-page__title">Enjoy chomping</div>
       <div className="chat-page__message-list">
         {messageItems}
       </div>
       <div className="chat-page__form">
+        <Dino />
         <MessageForm onSend={props.onSendMessage} />
       </div>
     </div>

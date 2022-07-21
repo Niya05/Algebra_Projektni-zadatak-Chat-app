@@ -1,0 +1,21 @@
+@keyframes animate {
+  0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+  }
+  90% {
+    transform: translateZ(160px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(2000px);
+    opacity: 1;
+  }
+}
+
+.dino {
+    overflow: hidden;
+    animation: animate 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}

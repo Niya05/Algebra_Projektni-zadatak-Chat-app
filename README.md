@@ -56,4 +56,4 @@ Build the project for production.
 
 - [ ] "Typing..." indicator
 - [ ] Dark theme toggle
-- [ ] Animated dinosaur icon
+- [ ] Improve dinosaur icon animations
