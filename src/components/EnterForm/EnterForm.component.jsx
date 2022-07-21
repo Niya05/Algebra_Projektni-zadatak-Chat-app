@@ -1,16 +1,16 @@
-import "./JoinForm.styles.scss";
+import "./EnterForm.styles.scss";
 
 import { InputFormField } from "../InputFormField";
 import { Button } from "../Button";
 
-export function JoinForm(props) {
+export function EnterForm(props) {
   return (
     <form
-      className="join-form"
+      className="enter-form"
       autoComplete="off"
       onSubmit={props.onSubmit}
     >
-      <div className="join-form__field">
+      <div className="enter-form__field">
         <InputFormField
           name="displayName"
           id="display-name"
@@ -20,7 +20,7 @@ export function JoinForm(props) {
           required
         />
       </div>
-      <div className="join-form__field">
+      <div className="enter-form__field">
         <Button variant="text"><span className="no-hover">Enter</span><span className="hover-text">at your own risk</span></Button>
       </div>
     </form>

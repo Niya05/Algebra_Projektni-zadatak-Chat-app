@@ -1,10 +1,10 @@
-import "./JoinPage.styles.scss";
+import "./EnterPage.styles.scss";
 
-import { JoinForm } from "../../components/JoinForm";
+import { EnterForm } from "../../components/EnterForm";
 import { DinoNameFact } from "../../components/DinoNameFact";
 import { useUser } from "../../contexts/UserContext";
 
-export function JoinPage(props) {
+export function EnterPage(props) {
   const { setUser } = useUser();
 
   const joinDinosaurs = (formState) => {
@@ -12,12 +12,12 @@ export function JoinPage(props) {
   }
 
   return (
-    <div className="join-page">
-      <div className="join-page__title">
+    <div className="enter-page">
+      <div className="enter-page__title">
         Chat with Dinosaurs
       </div>
-      <div className="join-page__form">
-        <JoinForm onJoin={joinDinosaurs} />
+      <div className="enter-page__form">
+        <EnterForm onEnter={joinDinosaurs} />
       </div>
       <DinoNameFact />
     </div>

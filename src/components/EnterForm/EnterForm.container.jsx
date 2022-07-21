@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { JoinForm as Component } from "./JoinForm.component";
+import { EnterForm as Component } from "./EnterForm.component";
 
-export function JoinForm(props) {
+export function EnterForm(props) {
   const [state, setState] = useState({ displayName: '' });
 
   const submitForm = (event) => {
     event.preventDefault();
-    props.onJoin(state);
+    props.onEnter(state);
   }
 
   const updateState = (event) => {
