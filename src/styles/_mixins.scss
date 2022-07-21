@@ -3,7 +3,7 @@
       border-radius: $size-radius-small;
     } @else if $type == 'rounded-border' {
       border-radius: $size-radius-small;
-      border: 1px ridge $color-theme-stone;
+      border: 1px ridge $color-theme-rock;
     } @else if $type == 'round' {
       border-radius: $size-radius-large;
     }

@@ -1,6 +1,8 @@
 # algebra-chat-app
 
-A simple real-time chat application developed as part of Algebra's Front-End Developer Course.
+A simple real-time chat application developed as part of Algebra's Front-End Developer Course, with animated dinosaurs and facts about them.
+
+[**Dinosaur facts provided by Dinosaur API**](https://dinosaur-facts-api.shultzlab.com/)
 
 [**See the app live on Netlify**](https://afelja-algebra-chat-app.netlify.app)
 
@@ -43,11 +45,12 @@ Build the project for production.
 
 ## Features
 
-- [x] Create text messages
-- [x] Send text message by pressing "Enter" or the submit button (message is shown next to the name of the author)
+- [x] Create and send text messages with author's name and timestamp displayed
 - [x] Every chat room member is identifiable by name and colour
 - [x] Integrate with Scaledrone to provide real-time chat functionality
 - [x] Host as GitHub repository
+- [x] A random fact about dinosaurs is displayed on every app launch
+- [x] Animated dinosaurs!
 
 ## Roadmap
 
