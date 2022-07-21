@@ -14,6 +14,7 @@ export function EnterPage() {
 
   return (
     <div className="enter-page">
+      <Dino />
       <div className="enter-page__title">
         Chat with Dinosaurs
       </div>
@@ -21,7 +22,6 @@ export function EnterPage() {
         <EnterForm onEnter={joinDinosaurs} />
       </div>
       <DinoNameFact />
-      <Dino />
     </div>
     
   );

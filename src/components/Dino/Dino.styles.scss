@@ -1,21 +1,23 @@
 @keyframes animate {
+
   0% {
-      transform: translateY(-1000px);
-      opacity: 0;
-  }
-  90% {
-    transform: translateZ(160px) rotateY(180deg);
-  }
+    transform: 
+    translateZ(0)
+    rotateY(0)
+    translateX(0)
+    translateY(0)
+  };
 
   100% {
-    transform: translateX(2000px);
-    opacity: 1;
-  }
+    transform: 
+    translateZ(160px)
+    rotateY(180deg)
+    translateX(100%)
+    translateY(-500px)
+  };
 }
 
 .dino {
-    overflow: hidden;
-    animation: animate 10s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation: animate 6s;
+    animation-direction: reverse;
 }

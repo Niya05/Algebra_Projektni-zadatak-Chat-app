@@ -48,12 +48,10 @@ Build the project for production.
 ## Features
 
 - [x] Create and send text messages with author's name and timestamp displayed
-- [x] Every chat room member is identifiable by name and colour
-- [x] Integrate with Scaledrone to provide real-time chat functionality
-- [x] Host as GitHub repository
+- [x] Each chat member is indentified by an unique color
+- [x] Integrated with Scaledrone so you can chat in real-time
 
 ## Roadmap
 
 - [ ] "Typing..." indicator
 - [ ] Dark theme toggle
-- [ ] Improve dinosaur icon animations

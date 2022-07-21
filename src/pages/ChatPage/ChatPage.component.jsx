@@ -13,10 +13,7 @@ export function ChatPage(props) {
 
   if (!props.connectedToRoom) {
     return (
-      <span>
         <div className="connection-loading">Joining the pack...</div>
-        <Dino />
-      </span>
     );
   }
 
@@ -28,6 +25,7 @@ export function ChatPage(props) {
         displayName={message.user.displayName}
         time={message.displayCreatedAt()}
       >
+        <Dino />
         {message.messageText}
       </Message>
     </div>
@@ -35,8 +33,8 @@ export function ChatPage(props) {
 
   return (
     <div className="chat-page">
-      <div className="chat-page__title">Enjoy chomping</div>
-      <div className="chat-page__message-list">
+      <div className="chat-page__title">Happy chomping !</div>
+        <div className="chat-page__message-list">
         {messageItems}
       </div>
       <div className="chat-page__form">
